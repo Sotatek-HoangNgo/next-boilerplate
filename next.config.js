@@ -1,6 +1,8 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const path = require('path');
 
+const isDev = process.env.NODE_ENV === 'development';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     experimental: {
@@ -14,7 +16,7 @@ const nextConfig = {
         return config;
     },
     compiler: {
-        removeConsole: true,
+        removeConsole: !isDev,
     },
 };
 

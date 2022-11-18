@@ -85,7 +85,7 @@ class LiquidBackground extends Component<IComponentProps, IComponentState> {
     componentDidMount(): void {
         this.initCanvasContext();
         this.waves = [
-            new Wave(this.canvasRef.current?.height || 0, 100, undefined, (this.canvasRef.current?.height || 0) - 200),
+            new Wave(this.canvasRef.current?.height || 0, 100, undefined, (this.canvasRef.current?.height || 0) - 100),
             // new Wave(this.canvasRef.current?.height || 0, 50, 'red'),
             // 5,
             // 'red',
