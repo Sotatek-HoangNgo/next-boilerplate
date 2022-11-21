@@ -7,6 +7,7 @@ const isDev = process.env.NODE_ENV === 'development';
 const nextConfig = {
     experimental: {
         appDir: true,
+        allowMiddlewareResponseBody: true,
     },
     sassOptions: {
         includePaths: [path.join(__dirname, './')],
